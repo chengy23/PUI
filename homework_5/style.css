@@ -1,6 +1,9 @@
+* {
+    font-family: 'Futura';
+}
+
 header {
     text-align: center;
-    font-family: 'Futura';
     position: static;
 }
 h1 {
@@ -41,5 +44,10 @@ li a:hover {
 #content {
     margin-left: 60px;
     margin-right: 60px;
+    position: absolute;
 }
+
+
+
+
 
