@@ -1,0 +1,45 @@
+header {
+    text-align: center;
+    font-family: 'Futura';
+    position: static;
+}
+h1 {
+    margin-bottom: 0px;
+}
+#headline {
+    margin-top: 0px;
+    color: grey;
+}
+
+/*style for navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+li {
+    margin:auto;
+    float:left;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: black;
+    color:white;
+}
+
+#content {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
