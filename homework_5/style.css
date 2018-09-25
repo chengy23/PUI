@@ -14,6 +14,10 @@ h1 {
     color: grey;
 }
 
+#icon {
+    margin-left: 50px;
+}
+
 /*style for navigation bar*/
 ul {
     list-style-type: none;
