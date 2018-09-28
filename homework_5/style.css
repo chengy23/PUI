@@ -6,9 +6,11 @@ header {
     text-align: center;
     position: static;
 }
+
 h1 {
     margin-bottom: 0px;
 }
+
 #headline {
     margin-top: 0px;
     color: grey;
@@ -18,7 +20,7 @@ h1 {
     margin-left: 50px;
 }
 
-/*style for navigation bar*/
+/* style for navigation bar */
 ul {
     list-style-type: none;
     margin: 0;
@@ -39,22 +41,12 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Nav bar: change the link color to black on hover */
 li a:hover {
     background-color: black;
     color:white;
 }
 
-#content {
-    margin-left: 60px;
-    margin-right: 60px;
-    position: absolute;
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-}
 
 /* Clear floats after the columns */
 .row:after {
@@ -64,25 +56,59 @@ li a:hover {
 }
 
 
+/* 
+hover style for product browsering page from W3schools.com
+Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity 
+*/
+.column {
+    margin-top: 1rem;
+    float: left;
+    width: 33.33%;
+    position: relative;
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
+}
+
+.middle {
     transition: .5s ease;
-    background-color: #008CBA;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
   }
   
-  .column:hover .overlay {
+.column:hover .middle {
     opacity: 1;
   }
   
+  .text {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 12px 36px;
+}
+
+/* when hover on the picture, the opacity of the image will change */
+.column:hover .product_image {
+    opacity: 0.6;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
 
 
+.content, .content.row {
+    text-align: center;
+}
 
+#page_title {
+    float: left;
+    margin-left: 3rem;
+    font-weight: bold;
+}
 
+.product_image {
+    margin:auto;
+}
