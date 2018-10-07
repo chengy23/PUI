@@ -24,6 +24,7 @@ h1 a {
 
 #icon {
   margin-left: 50px;
+  vertical-align: super;
 }
 
 /* style for navigation bar */
