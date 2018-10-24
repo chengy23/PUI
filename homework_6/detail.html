@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Original Cinnamon Roll</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yi Cheng"> 
+    <meta name="product detail page" content="The product detail page shows the detail of items">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </head>
+  
+  <body>
+    <header class="banner">
+      <h1><a href="index.html">Bun Bun</a></h1>  
+      <p id="headline">Delivers anywhere in Pittsburgh!</p>
+
+      <!-- nav bar -->
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shop.html">Our Roll</a></li>
+        <li><a href="shop.html">Gift</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="shop.html">About</a></li>
+      </ul>
+      <img id="icon" src="img/icon.png" alt="shopping cart">
+      <div id="cart">1</div>
+    </header>
+
+    <div class="content">
+      <div id=page_title>Cinnamon Rolls > Original Cinnamon Roll</div><br>
+              
+      <!-- left section of the page contains a product picture -->
+      <div class="left_section">
+        <img class="product_image" src="img/detail1.png" alt="original cinnamon roll picture">
+      </div>
+
+      <!-- right section of the page contains description of the prodcut and purchase option -->
+      <div class="right_section">
+        <p class="item_name">Original Cinnamon Rolls</p>
+        <p>$5 / each</p>
+        <p id="item_description">Enriched Flour Bleached (wheat flour, niacin, ferrous sulfate, thiamin 
+          mononitrate, riboflavin, folic acid), Water, Sugar, Dextrose, Palm and Soybean Oil, Wheat Starch. 
+          Contains 2% or less of: High Fructose Corn Syrup, Baking Powder (baking soda, sodium acid pyrophosphate, 
+          sodium aluminum phosphate).
+        </p>
+
+        <div class="options">
+          <!-- Options for quantity -->
+          <p>Quantity:</p>
+          <button class="opt qty selected" value="1">1</button>
+          <button class="opt qty unselected" value="3">3</button>
+          <button class="opt qty unselected" value="6">6</button>
+          <button class="opt qty unselected" value="12">12</button>
+          
+          <!-- Options for glazing -->
+          <p>Glazing:</p>
+          <button class="opt glaze selected" value="None">None</button>
+          <button class="opt glaze unselected" value="Sugar Milk">Sugar Milk</button>
+          <button class="opt glaze unselected" value="Vanilla Milk">Vanilla Milk</button>
+          <button class="opt glaze unselected" value="Choco Milk">Choco Milk</button>
+        </div>
+
+        <button>Add to Cart</button>
+        <button>Buy Now</button>
+        
+      </div>
+
+      
+  </div>   
+</body>

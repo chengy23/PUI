@@ -1,0 +1,189 @@
+* {
+  font-family: 'Futura';
+}
+
+header {
+  text-align: center;
+  position: static;
+}
+
+h1, a {
+  margin-bottom: 0px;
+}
+
+h1 a {
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+#headline {
+  margin-top: 0px;
+  color: grey;
+}
+
+#icon {
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  vertical-align: super;
+}
+
+#cart {
+  width: 20px;
+  height: 20px;
+  background-color: #EB5757;
+  border-radius: 60px;
+  color:white;
+  display: inline-block;
+}
+
+/* style for navigation bar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+li {
+  margin:auto;
+  float:left;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Nav bar: change the link color to black on hover */
+li a:hover {
+  background-color: black;
+  color:white;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* 
+hover style for product browsering page from W3schools.com
+Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity 
+*/
+.column {
+  margin-top: 1rem;
+  float: left;
+  width: 33.33%;
+  position: relative;
+
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  padding: 12px 36px;
+}
+
+/* when hover on the picture, the opacity of the image will change */
+.column:hover .product_image {
+  opacity: 0.6;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+.content, .content.row {
+  text-align: center;
+}
+
+#page_title {
+  float: left;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product_image {
+  margin:auto;
+}
+
+.left_section .product_image {
+  width: 30rem;
+  float:left;
+  margin-left: 2rem;
+}
+
+.right_section {
+  text-align:left;
+  margin-left:48%;
+  width:50%;
+}
+
+.product_image {
+  width: 90%;
+}
+
+button {
+  color: black;
+  border-color: black;
+  border-width: 3px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 120px;
+}
+
+.opt, .unselected  {
+  color: black;
+  font-size: 15px;
+  background-color: lightgrey;
+  width: 100px;
+  margin-right: 10px;
+  margin-top: 0px;
+  border-color: transparent;
+}
+
+/* Button: change style when hover */
+.opt:hover, .selected {
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
