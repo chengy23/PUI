@@ -59,6 +59,15 @@ li a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* Nav bar: change the link color to black on hover */
 li a:hover {
   background-color: black;
@@ -184,6 +193,90 @@ button {
   width:95%;
 }
 
+#back_link {
+  color:gray;
+  font-size:12px;
+  margin-left:10%;
+}
+
+.cart_img {
+  height:120px;
+  width:150px;
+}
+
+.remove_btn {
+  width:20px;
+  height:20px;
+  padding:0;
+  margin:0;
+  border:none;
+  font-size: 15px;
+}
+
+.total_summary {
+  right: 10%;
+  margin-top: 20px;
+  width:20%;
+  overflow: scroll;
+  position: fixed;
+}
+
+.total_text {
+  background-color:#F2F2F2;
+  padding-bottom: 10px;
+}
+
+.total_summary button {
+  width:100%;
+  height: 50px;
+  border:none;
+  margin-top: 20px;
+  background-color: #333333;
+  font-size: 15px;
+  color: white;
+}
+
+.total_summary button:hover {
+  opacity: 0.8;
+}
+
+.total_summary #top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid;
+  border-color: lightgray;
+  border-width: 2px;
+  font-weight: bold;
+}
+
+.order {
+  width: 50%;
+  text-align: left;
+  border-collapse:collapse; 
+  margin-top: 20px;
+  float: left;
+  margin-left: 10%;
+}
+
+.cart_product {
+  font-weight: bold;
+}
+
+.cart_product, .cart_glaze {
+  font-size: 12px;
+}
+
+tr {
+  border-bottom:solid;
+  border-color: lightgray;
+  border-width: 2px;
+  padding-bottom: 20px;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 
 

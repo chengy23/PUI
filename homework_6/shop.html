@@ -6,6 +6,9 @@
     <meta name="author" content="Yi Cheng"> 
     <meta name="product browsering page" content="The product browsering page shows the variety of items the store has">
     <link href="style.css" type="text/css" rel="stylesheet">
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
   </head>
   
   <body>
@@ -21,8 +24,8 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="shop.html">About</a></li>
       </ul>
-      <img id="icon" src="img/icon.png" alt="shopping cart">
-      <div id="cart">0</div>    
+      <a href="cart.html"><img id="icon" src="img/icon.png" alt="shopping cart"></a>
+      <div id="cart"></div>  
     </header>
 
     <!-- place product pictures into 3 column -->
@@ -40,39 +43,47 @@
       </div>
 
       <div class="column">
-        <img class="product_image" src="img/product2.png" alt="blackberry cinnamon roll picture">
+        <a href="detail_blueberry.html">
+        <img class="product_image" src="img/product2.png" alt="blueberry cinnamon roll picture">
         <div class="middle">
           <div class="text">Detail</div>
         </div>
-        <p class="description">Blackberry Cinnamon Rolls<br>$6 / each</p>
+        </a>
+        <p class="description">Blueberry Cinnamon Rolls<br>$5 / each</p>
       </div>
 
       <div class="column">
+        <a href="detail_walnut.html">
         <img class="product_image" src="img/product3.png" alt="walnut cinnamon roll picture">
         <div class="middle">
           <div class="text">Detail</div>
         </div>
-        <p class="description">Walnut Cinnamon Rolls<br>$8 / each</p>
+        </a>
+        <p class="description">Walnut Cinnamon Rolls<br>$5 / each</p>
       </div>
       
       <div class="column">
+        <a href="detail_gluten.html">
         <img class="product_image" src="img/product4.png" alt="gluten free cinnamon roll picture">
         <div class="middle">
           <div class="text">Detail</div>
         </div>
-        <p class="description">Gluten Free Cinnamon Rolls<br>$6 / each</p>
+        </a>
+        <p class="description">Gluten Free Cinnamon Rolls<br>$5 / each</p>
       </div>
 
       <div class="column">
+        <a href="detail_pumpkin.html">
         <img class="product_image" src="img/product5.png" alt="pumpkin cinnamon roll picture">
         <div class="middle">
           <div class="text">Detail</div>
         </div>
-        <p class="description">Pumpkin Cinnamon Rolls<br>$9 / each</p>
+        </a>
+        <p class="description">Pumpkin Cinnamon Rolls<br>$5 / each</p>
       </div>
 
       <div class="column">
-        <a href="detail.html">
+        <a href="detail_choco.html">
           <img class="product_image" src="img/product6.png" alt="choco cinnamon roll picture">
           <div class="middle">
             <div class="text">Detail</div>
