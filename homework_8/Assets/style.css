@@ -29,10 +29,6 @@ section {
     background-color: #91BAC8;
 }
 
-#bg-part6 {
-    background-color: #FFEEDB;
-}
-
 #bg-part2, #bg-part3, #bg-part4, #bg-part5 {
     overflow: hidden;
 }
@@ -88,8 +84,6 @@ section {
     min-width: 300px;
     margin-top: -10%;
     border-radius: 50%;
-    /* max-width: 100%; and height: auto;  */
-    /* cursor:url('img/chopstick.png'), auto; */
 }
 
 .cook-overlay {
@@ -99,7 +93,6 @@ section {
     border-radius: 10px;
     border-color: transparent;
     width:40%;
-    /* max-height: 30%; */
     left:30%; 
     top: 2%;
     z-index: 3;
@@ -114,15 +107,6 @@ section {
     width: 15%;
 }
 
-/* .cook-content {
-    padding: 10%;
-   text-align: center;
-   font: 15px;
-   word-wrap: break-word;
-
-} */
-
-
 /* Pop up style */
 .popup-overlay{
     /*Hides pop-up when there is no "active" class*/
@@ -130,49 +114,44 @@ section {
     position:absolute;
     background:#ffffff;
     opacity: 0.9;
-    /* border:3px solid #666666; */
     border-radius: 10px;
     width:50%;
     height:70%;
     left:25%; 
     top: 15%;
   }
-  .popup-overlay.active {
+.popup-overlay.active {
     /*displays pop-up when "active" class is present*/
     transition-delay: 1s;
     visibility:visible;
     text-align:center;
     left: 40%;
     overflow: scroll;
-  }
+}
   
-  .popup-content {
+.popup-content {
     /*Hides pop-up content when there is no "active" class */
-   visibility:hidden;
-   padding: 10%;
-   text-align: center;
-   
-  }
+    visibility:hidden;
+    padding: 10%;
+    text-align: center;
+}
   
-  .popup-content.active {
+.popup-content.active {
     /*Shows pop-up content when "active" class is present */
     transition-delay: 1s;
     visibility:visible;
-  }
+}
   
-  button{
+button{
     display:inline-block;
     margin:1rem;
     font-size: 1rem;
     color:#666666;
-  }
+}
   
-  button:hover{
+button:hover{
     color:#ffffff;
-  }
-
-
-/* note */
+}
 
 .text {
     right: 75%;
@@ -188,14 +167,12 @@ section {
     z-index: 2;
 }
 
-
+/* style for food ingredients */
 .fd {
     position: absolute;
     height: 15%;
     cursor:url('img/chopstick.png'), auto;
-
 }
-
 
 .fd-1 {
     top: 28%;
@@ -226,31 +203,6 @@ section {
     top: 30%;
     left: 85%;
 }
-
-/* .fd-7 {
-    top:55%;
-    left: 80%;
-} */
-
-.sauce {
-    position: absolute;
-    height: 17%;
-}
-
-/* .draggable {
- 
-    background: #F90;
-    border-radius: 10px;
-  }
-  .draggable.is-pointer-down {
-  }
-  .draggable.is-dragging { 
-      opacity: 0.2; 
-      background: black;
-    }
-   */
-
-
 
 /* Animation for floating. Modified based on source:https://jsfiddle.net/djsbaker/rkzZG/ */
 .floating{
@@ -350,9 +302,9 @@ section {
       -webkit-transform-origin: left;
       transform-origin: left;
     }
-  }
+}
 
-  @keyframes zoomOutLeft {
+@keyframes zoomOutLeft {
     40% {
       opacity: 1;
       -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(60px, 0, 0);
@@ -365,17 +317,17 @@ section {
       -webkit-transform-origin: left;
       transform-origin: left;
     }
-  }
+}
 
   
-  .zoomOutLeft {
+.zoomOutLeft {
     -webkit-animation-name: zoomOutLeft;
     animation-name: zoomOutLeft;
     animation-fill-mode: forwards;
     animation-duration: 1s;
     z-index: 3;
     position: relative;
-  }
+}
 
 
 @-webkit-keyframes zoomInLeft {
@@ -391,9 +343,9 @@ section {
         -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(60px, 0, 0);
         transform: scale3d(0.5, 0.5, 0.5) translate3d(60px, 0, 0);
     }
-  }
+}
 
-  @keyframes zoomInLeft {
+@keyframes zoomInLeft {
     from {
         -webkit-transform: scale(0.6) translate3d(-85%, 0, 0);
         transform: scale(0.6) translate3d(-85%, 0, 0);
@@ -406,15 +358,15 @@ section {
         -webkit-transform: scale3d(0.5, 0.5, 0.5) translate3d(60px, 0, 0);
         transform: scale3d(0.5, 0.5, 0.5) translate3d(60px, 0, 0);
     }
-  }
+}
   
-  .zoomInLeft {
+.zoomInLeft {
     -webkit-animation-name: zoomInLeft;
     animation-name: zoomInLeft;
     animation-fill-mode: forwards;
     animation-duration: 1s;
     position: relative;
-  }
+}
 
 
 @-webkit-keyframes fadeOutDown {
@@ -427,9 +379,9 @@ section {
       -webkit-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
     }
-  }
+}
 
-  @keyframes fadeOutDown {
+@keyframes fadeOutDown {
     from {
       opacity: 1;
     }
@@ -439,17 +391,17 @@ section {
       -webkit-transform: translate3d(0, 100%, 0);
       transform: translate3d(0, 100%, 0);
     }
-  }
+}
   
-  .fadeOutDown {
+.fadeOutDown {
     -webkit-animation-name: fadeOutDown;
     animation-name: fadeOutDown;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-iteration-count: 1;
-  }
+}
 
-  @-webkit-keyframes shake {
+@-webkit-keyframes shake {
     from,
     to {
       -webkit-transform: translate3d(0, 0, 0);
@@ -472,9 +424,9 @@ section {
       -webkit-transform: translate3d(10px, 0, 0);
       transform: translate3d(10px, 0, 0);
     }
-  }
+}
 
-  @keyframes shake {
+@keyframes shake {
     from,
     to {
       -webkit-transform: translate3d(0, 0, 0);
@@ -497,16 +449,15 @@ section {
       -webkit-transform: translate3d(10px, 0, 0);
       transform: translate3d(10px, 0, 0);
     }
-  }
+}
 
-  .shake {
+.shake {
     -webkit-animation-name: shake;
     animation-name: shake;
     animation-duration: 2s;
     animation-iteration-count: 1;
-  }
+}
   
-
 @media (max-width:576px) {
     .cook-overlay {
         font-size: 12px;
@@ -529,18 +480,15 @@ section {
         left:15%; 
         top: 15%;
       }
-      .popup-overlay.active {
+    .popup-overlay.active {
         /*displays pop-up when "active" class is present*/
         left: 30%;
-        /* z-index: 3; */
-      }
-      .popup-content.active {
-          font-size: 12px;
-      }
+    }
+    .popup-content.active {
+        font-size: 12px;
+    }
 
-      .popup-content.active h3 {
+    .popup-content.active h3 {
           font-size: 20px;
-      }
-
-
-  }
+    }
+}
