@@ -155,7 +155,7 @@ $(document).ready(function(){
   });
 
  
-    $( ".droppable" ).droppable({
+    $(".droppable" ).droppable({
       classes: {
         "ui-droppable-active": "ui-state-active",
         "ui-droppable-hover": "ui-state-hover"
@@ -171,9 +171,10 @@ $(document).ready(function(){
 
         $(".fadeOutDown").off();
         $(".fadeOutDown").css("cursor", "auto");
-      }
+      
 
-    });
+    }
+  });
 
   
   
