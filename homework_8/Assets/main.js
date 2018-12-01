@@ -171,6 +171,7 @@ $(document).ready(function(){
 
         $(".fadeOutDown").off();
         $(".fadeOutDown").css("cursor", "auto");
+      }
 
     });
 
